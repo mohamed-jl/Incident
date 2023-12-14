@@ -1,0 +1,10 @@
+<div *ngIf="incidentsData">
+    <h2>Traffic Incidents:</h2>
+    <ul>
+      <li *ngFor="let incident of incidentsData.incidents">
+        <p>Type: {{ incident.type }}</p>
+        <p>Coordinates: {{ incident.geometry.coordinates }}</p>
+        <p>Icon Category: {{ incident.properties.iconCategory }}</p>
+      </li>
+    </ul>
+  </div>

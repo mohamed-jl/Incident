@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    border-width: 2px;
+    border-color: black;
+
+}
+
+
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:44%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+@media screen and (max-width:800px){
+    .home-container{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    .home-container{
+        width: 100%;
+    }
+    
+}
